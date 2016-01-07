@@ -15,6 +15,8 @@
 		67CDEFB51C3DA94E00977C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CDEFB31C3DA94E00977C70 /* LaunchScreen.storyboard */; };
 		67CDEFC01C3DA94E00977C70 /* ToggleStatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFBF1C3DA94E00977C70 /* ToggleStatusBarTests.swift */; };
 		67CDEFCB1C3DA94E00977C70 /* ToggleStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFCA1C3DA94E00977C70 /* ToggleStatusBarUITests.swift */; };
+		67CDEFDC1C3DDC7D00977C70 /* StatusBarNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */; };
+		67CDEFE11C3F1BD600977C70 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFE01C3F1BD600977C70 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		67CDEFC61C3DA94E00977C70 /* ToggleStatusBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToggleStatusBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDEFCA1C3DA94E00977C70 /* ToggleStatusBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStatusBarUITests.swift; sourceTree = "<group>"; };
 		67CDEFCC1C3DA94E00977C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarNotification.swift; sourceTree = "<group>"; };
+		67CDEFE01C3F1BD600977C70 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		67CDEFA71C3DA94E00977C70 /* ToggleStatusBar */ = {
 			isa = PBXGroup;
 			children = (
+				67CDEFDF1C3F1BC900977C70 /* Alert */,
+				67CDEFD81C3DDB8B00977C70 /* StatusBarNotification */,
 				67CDEFA81C3DA94E00977C70 /* AppDelegate.swift */,
 				67CDEFAA1C3DA94E00977C70 /* FirstViewController.swift */,
 				67CDEFAC1C3DA94E00977C70 /* SecondViewController.swift */,
@@ -126,6 +132,22 @@
 				67CDEFCC1C3DA94E00977C70 /* Info.plist */,
 			);
 			path = ToggleStatusBarUITests;
+			sourceTree = "<group>";
+		};
+		67CDEFD81C3DDB8B00977C70 /* StatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */,
+			);
+			name = StatusBarNotification;
+			sourceTree = "<group>";
+		};
+		67CDEFDF1C3F1BC900977C70 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				67CDEFE01C3F1BD600977C70 /* Alert.swift */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 			files = (
 				67CDEFAD1C3DA94E00977C70 /* SecondViewController.swift in Sources */,
 				67CDEFA91C3DA94E00977C70 /* AppDelegate.swift in Sources */,
+				67CDEFDC1C3DDC7D00977C70 /* StatusBarNotification.swift in Sources */,
+				67CDEFE11C3F1BD600977C70 /* Alert.swift in Sources */,
 				67CDEFAB1C3DA94E00977C70 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +512,7 @@
 				67CDEFD11C3DA94E00977C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CDEFD21C3DA94E00977C70 /* Build configuration list for PBXNativeTarget "ToggleStatusBarTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +521,7 @@
 				67CDEFD41C3DA94E00977C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CDEFD51C3DA94E00977C70 /* Build configuration list for PBXNativeTarget "ToggleStatusBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +530,7 @@
 				67CDEFD71C3DA94E00977C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
