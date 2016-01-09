@@ -1,1 +1,1 @@
-![Status Bar Notifications](http://i.imgur.com/oaAFYaF.gifv)
+[Status Bar Notifications](http://i.imgur.com/oaAFYaF.gifv)
