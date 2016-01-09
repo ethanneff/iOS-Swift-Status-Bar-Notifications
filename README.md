@@ -7,8 +7,12 @@
 **methodology**
 - all controllers must import CustomViewController (Views and TableViews)
 - access the statusbar notification at anytime via 
- - StatusBarNotification.show(text: String)
- - StatusBarNotification.hide(text: String?)
+```swift
+StatusBarNotification.show(text: String)
+```
+```swift
+StatusBarNotification.hide(text: String?)
+```
 
 
 
