@@ -1,1 +1,1 @@
-# Swift-Status-Bar-Notification
+![Status Bar Notifications](http://i.imgur.com/oaAFYaF.gifv)
