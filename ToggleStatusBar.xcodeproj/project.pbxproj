@@ -17,6 +17,10 @@
 		67CDEFCB1C3DA94E00977C70 /* ToggleStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFCA1C3DA94E00977C70 /* ToggleStatusBarUITests.swift */; };
 		67CDEFDC1C3DDC7D00977C70 /* StatusBarNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */; };
 		67CDEFE11C3F1BD600977C70 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFE01C3F1BD600977C70 /* Alert.swift */; };
+		67CDEFE51C3F47A400977C70 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDEFE41C3F47A400977C70 /* ThirdViewController.swift */; };
+		67CDF0271C4021BB00977C70 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDF0261C4021BB00977C70 /* Events.swift */; };
+		67CDF02B1C4021D300977C70 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDF02A1C4021D300977C70 /* Utils.swift */; };
+		67CDF0311C402D1700977C70 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDF0301C402D1700977C70 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		67CDEFCC1C3DA94E00977C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarNotification.swift; sourceTree = "<group>"; };
 		67CDEFE01C3F1BD600977C70 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		67CDEFE41C3F47A400977C70 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		67CDF0261C4021BB00977C70 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		67CDF02A1C4021D300977C70 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../Utils.swift; sourceTree = "<group>"; };
+		67CDF0301C402D1700977C70 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +111,8 @@
 		67CDEFA71C3DA94E00977C70 /* ToggleStatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				67CDEFDF1C3F1BC900977C70 /* Alert */,
-				67CDEFD81C3DDB8B00977C70 /* StatusBarNotification */,
-				67CDEFA81C3DA94E00977C70 /* AppDelegate.swift */,
-				67CDEFAA1C3DA94E00977C70 /* FirstViewController.swift */,
-				67CDEFAC1C3DA94E00977C70 /* SecondViewController.swift */,
-				67CDEFAE1C3DA94E00977C70 /* Main.storyboard */,
-				67CDEFB11C3DA94E00977C70 /* Assets.xcassets */,
-				67CDEFB31C3DA94E00977C70 /* LaunchScreen.storyboard */,
-				67CDEFB61C3DA94E00977C70 /* Info.plist */,
+				67CDF02D1C402CFB00977C70 /* App */,
+				67CDF02C1C402CF600977C70 /* Assets */,
 			);
 			path = ToggleStatusBar;
 			sourceTree = "<group>";
@@ -134,20 +135,63 @@
 			path = ToggleStatusBarUITests;
 			sourceTree = "<group>";
 		};
-		67CDEFD81C3DDB8B00977C70 /* StatusBarNotification */ = {
-			isa = PBXGroup;
-			children = (
-				67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */,
-			);
-			name = StatusBarNotification;
-			sourceTree = "<group>";
-		};
-		67CDEFDF1C3F1BC900977C70 /* Alert */ = {
+		67CDF0281C4021C000977C70 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				67CDEFE01C3F1BD600977C70 /* Alert.swift */,
+				67CDF02A1C4021D300977C70 /* Utils.swift */,
+				67CDF0261C4021BB00977C70 /* Events.swift */,
 			);
-			name = Alert;
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		67CDF02C1C402CF600977C70 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				67CDF0321C402DC800977C70 /* Img */,
+				67CDF0281C4021C000977C70 /* Lib */,
+				67CDEFA81C3DA94E00977C70 /* AppDelegate.swift */,
+				67CDEFB61C3DA94E00977C70 /* Info.plist */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		67CDF02D1C402CFB00977C70 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67CDF02E1C402D0000977C70 /* Components */,
+				67CDF02F1C402D0400977C70 /* Shared */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		67CDF02E1C402D0000977C70 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				67CDEFAE1C3DA94E00977C70 /* Main.storyboard */,
+				67CDEFAA1C3DA94E00977C70 /* FirstViewController.swift */,
+				67CDEFAC1C3DA94E00977C70 /* SecondViewController.swift */,
+				67CDEFE41C3F47A400977C70 /* ThirdViewController.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		67CDF02F1C402D0400977C70 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				67CDF0301C402D1700977C70 /* CustomViewController.swift */,
+				67CDEFDB1C3DDC7D00977C70 /* StatusBarNotification.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		67CDF0321C402DC800977C70 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				67CDEFB11C3DA94E00977C70 /* Assets.xcassets */,
+				67CDEFB31C3DA94E00977C70 /* LaunchScreen.storyboard */,
+			);
+			name = Img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +329,11 @@
 				67CDEFA91C3DA94E00977C70 /* AppDelegate.swift in Sources */,
 				67CDEFDC1C3DDC7D00977C70 /* StatusBarNotification.swift in Sources */,
 				67CDEFE11C3F1BD600977C70 /* Alert.swift in Sources */,
+				67CDF0271C4021BB00977C70 /* Events.swift in Sources */,
+				67CDEFE51C3F47A400977C70 /* ThirdViewController.swift in Sources */,
 				67CDEFAB1C3DA94E00977C70 /* FirstViewController.swift in Sources */,
+				67CDF02B1C4021D300977C70 /* Utils.swift in Sources */,
+				67CDF0311C402D1700977C70 /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
